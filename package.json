@@ -1,0 +1,20 @@
+{
+  "name": "shop",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^7.1.7"
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "^4.1.13",
+    "petite-vue": "^0.4.1",
+    "swiper": "^12.0.2",
+    "tailwindcss": "^4.1.13"
+  }
+}

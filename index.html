@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Адвокатське бюро «Світлани Левченко»: юридичні послуги для бізнесу і приватних клієнтів, судові спори, кримінальний захист, консультації адвоката."
+    />
+    <link rel="icon" type="image/svg+xml" href="/levchenko.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Адвокатське бюро «Світлани Левченко» | Захист бізнесу та приватних клієнтів</title>
+    <link rel="canonical" href="https://levchenko.com.ua/" />
+    <meta property="og:title" content="Адвокатське бюро «Світлани Левченко» | Захист бізнесу та приватних клієнтів" />
+    <meta
+      property="og:description"
+      content="Юридичні послуги для бізнесу і приватних клієнтів, судові спори, кримінальний захист, консультації адвоката."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://levchenko.com.ua/" />
+    <meta property="og:image" content="/img/X9BL-2.webp" />
+    <meta name="twitter:card" content="/img/X9BL-2.webp" />
+  </head>
+  <body class="text-text-1 bg-bg" v-scope="{ storage }">
+    <header
+      v-scope="{ isMenuOpen: false}"
+      :data-menu-open="isMenuOpen ? 'true' : null"
+      class="fixed top-0 w-full z-20 shadow-block transition-colors bg-common/95 backdrop-filter"
+      @keydown.escape.window="isMenuOpen = false"
+    >
+      <div class="px-4 py-3 flex gap-3 items-center justify-between container mx-auto">
+        <a href="/" class="focus-ring xl:mr-auto relative z-10 flex gap-3 items-center" aria-label="На головну">
+          <svg width="71" height="53" class="fill-text-1">
+            <title>HAIRKHRYSTYA shop</title>
+            <use href="./src/svg/layout-sprite.svg#logo"></use>
+          </svg>
+          <h1 class="text-xl text-center font-mono font-medium">
+            Адвокатське бюро <br />
+            "Світлани Левченко"
+          </h1>
+        </a>
+        <nav
+          role="navigation"
+          class="fixed top-0 px-0 h-screen xl:h-auto xl:static xl:visible xl:opacity-100 xl:flex inset-0 mt-[64px] xl:mt-0 p-4 xl:p-0 xl:pointer-events-auto bg-common/95 duration-300 xl:bg-transparent transition-[opacity,visibility]"
+          :class="isMenuOpen ? 'visible opacity-100' : 'invisible opacity-0 pointer-events-none'"
+          id="main-menu"
+          :aria-hidden="!isMenuOpen"
+        >
+          <ul class="divide-y container mx-auto divide-stroke xl:flex xl:divide-x xl:divide-y-0 xl:items-center -mr-2">
+            <li>
+              <a href="#about-us" class="menu-link focus-ring w-max" @click="isMenuOpen=false">Про нас</a>
+            </li>
+            <li>
+              <a href="#blog" class="menu-link focus-ring w-max" @click="isMenuOpen=false">Послуги</a>
+            </li>
+            <li>
+              <a href="#values" class="menu-link focus-ring w-max" @click="isMenuOpen=false">Цінності</a>
+            </li>
+            <li>
+              <a href="#advokats" class="menu-link focus-ring w-max" @click="isMenuOpen=false">Адвокати</a>
+            </li>
+            <li>
+              <a href="#ask" class="menu-link focus-ring w-max" @click="isMenuOpen=false">Задати питання</a>
+            </li>
+          </ul>
+        </nav>
+        <button
+          type="button"
+          @click="isMenuOpen = !isMenuOpen"
+          class="xl:hidden rounded-xs focus-ring fill-primary w-12 h-12 flex items-center justify-center cursor-pointer -mr-3"
+          aria-label="Головне меню"
+          :aria-expanded="isMenuOpen"
+          aria-controls="main-menu"
+        >
+          <svg viewBox="0 0 16 14" width="16">
+            <rect
+              :class="['transition-[transform,width] origin-center will-change-[transform,width]', isMenuOpen ? 'transform-[rotate(45deg)_translate(-8px,_6px)] w-4' : 'transform-[rotate(0)_translate(0,_0)] w-2']"
+              width="8"
+              height="2"
+              x="8"
+              y="0"
+              rx="1"
+            ></rect>
+            <rect
+              :class="['transition-[transform,width] origin-center will-change-transform', isMenuOpen ? 'transform-[rotate(-45deg)]' : 'transform-[rotate(0)]']"
+              class=""
+              width="16"
+              height="2"
+              x="0"
+              y="6"
+              rx="1"
+            ></rect>
+            <rect
+              :class="['transition-[transform,width] origin-center will-change-[transform,width]', isMenuOpen ? 'transform-[rotate(-45deg)_translate(-4px,_-6px)] w-4' : 'transform-[rotate(0)_translate(0,_0)] w-3']"
+              width="12"
+              height="2"
+              x="4"
+              y="12"
+              rx="1"
+            ></rect>
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <main class="mt-20">
+      <section class="px-4 py-5 xl:py-10 mx-auto container">
+        <div
+          class="w-full px-8 py-12 min-h-[calc(100vh-80px)] xl:min-h-[calc(80vh-80px)] xl:py-14 bg-[url('/src/img/bg/bg.jpg')] flex flex-col bg-cover bg-center rounded-3xl before:block before:absolute before:inset-0 before:bg-linear-to-b before:bg-from-common before:from-common/95 before:via-common/70 before:to-primary/40 bg-from-common before:rounded-3xl relative z-10"
+        >
+          <h2 class="text-3xl xl:text-4xl font-medium w-full text-center mb-4 z-20 relative font-mono text-primary">
+            Правовий захист бізнесу та приватних клієнтів
+          </h2>
+          <p class="text-xl font-medium text-center z-20 relative text-balance text-shadow-lg text-shadow-common">
+            Юридичний супровід, представництво в суді, захист у кримінальних провадженнях та правова допомога у складних
+            ситуаціях.
+          </p>
+          <a
+            href="/contacts"
+            class="mt-auto mx-auto px-7 py-3 text-common hover:bg-secondary hover:text-text-1 shadow-2xl transition-colors bg-primary relative z-20 rounded-xl shadow-3xl shadow-common"
+            >Зв'язатися з нами</a
+          >
+        </div>
+      </section>
+
+      <section id="about-us" class="container px-4 py-5 xl:py-10 mx-auto scroll-mt-24">
+        <h2 class="text-3xl xl:text-4xl font-medium text-center font-mono mb-4 text-primary">Практики бюро</h2>
+        <p class="font-medium text-md leading-relaxed text-center max-w-200 mx-auto mb-8">
+          Надаємо правову допомогу бізнесу та приватним клієнтам: від щоденного юридичного супроводу до захисту інтересів у суді
+          та складних кримінальних провадженнях.
+        </p>
+
+        <div class="grid gap-4 md:grid-cols-2 xl:grid-cols-3 mx-auto">
+          <article class="rounded-2xl border border-stroke bg-common/70 p-6 shadow-block flex gap-4 items-center">
+            <svg width="64" height="64" class="fill-primary stroke-primary shrink-0">
+              <use href="./src/svg/layout-sprite.svg#briefcase"></use>
+            </svg>
+            <h3 class="">Юридичний супровід бізнесу</h3>
+          </article>
+
+          <article class="rounded-2xl border border-stroke bg-common/70 p-6 shadow-block flex gap-4 items-center">
+            <svg width="64" height="64" class="fill-primary stroke-primary shrink-0">
+              <use href="./src/svg/layout-sprite.svg#copyright"></use>
+            </svg>
+            <h3 class="">Інтелектуальна власність</h3>
+          </article>
+
+          <article class="rounded-2xl border border-stroke bg-common/70 p-6 shadow-block flex gap-4 items-center">
+            <svg width="64" height="64" class="fill-primary stroke-primary shrink-0">
+              <use href="./src/svg/layout-sprite.svg#law"></use>
+            </svg>
+            <h3 class="">Судові спори</h3>
+          </article>
+          <article class="rounded-2xl border border-stroke bg-common/70 p-6 shadow-block flex gap-4 items-center">
+            <svg width="64" height="64" class="fill-primary stroke-primary shrink-0">
+              <use href="./src/svg/layout-sprite.svg#handcuff"></use>
+            </svg>
+            <div>
+              <h3 class="">Захист в кримінальних провадженнях</h3>
+            </div>
+          </article>
+          <article class="rounded-2xl border border-stroke bg-common/70 p-6 shadow-block flex gap-4 items-center">
+            <svg width="64" height="64" class="fill-primary stroke-primary shrink-0">
+              <use href="./src/svg/layout-sprite.svg#europe"></use>
+            </svg>
+            <div>
+              <h3 class="">Звернення до Європейського суду з прав людини</h3>
+            </div>
+          </article>
+
+          <article class="rounded-2xl border border-stroke bg-common/70 p-6 shadow-block flex gap-4 items-center">
+            <svg width="64" height="64" class="fill-primary stroke-primary shrink-0">
+              <use href="./src/svg/layout-sprite.svg#person"></use>
+            </svg>
+            <div>
+              <h3 class="">Приватні клієнти</h3>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="services" class="container px-4 py-5 xl:py-10 mx-auto scroll-mt-24 my-8">
+        <h2 class="text-3xl xl:text-4xl font-medium font-mono mb-4 text-center text-primary">Повний спектр юридичних послуг</h2>
+        <p class="font-medium text-md leading-relaxed text-center max-w-200 mx-auto mb-15">
+          Працюємо як з бізнесом, так і з приватними клієнтами — від корпоративного супроводу та податкових питань до судового
+          захисту, кримінальних проваджень і звернень до ЄСПЛ.
+        </p>
+
+        <article class="rounded-3xl border border-stroke bg-common/70 shadow-block grid md:grid-cols-2 overflow-hidden mb-10">
+          <div class="relative min-h-[20vh] w-full">
+            <img
+              src="./src/img/bg/bussiness.webp"
+              alt=""
+              class="absolute inset-0 h-full w-full object-cover z-10 grayscale-[50%]"
+            />
+          </div>
+          <div class="gap-4 p-6 xl:p-7">
+            <h3 class="text-3xl text-primary mb-1 xl:text-[33px]">Для бізнесу</h3>
+            <p class="font-medium text-sm font-mono leading-tight mb-10">Повний спектр юридичних послуг для бізнесу</p>
+            <ul class="grid ml-2">
+              <li class="service-item">Супровід створення, реорганізації, ліквідації підприємств</li>
+              <li class="service-item">Оподаткування</li>
+              <li class="service-item">Отримання ліцензій та дозвільної документації</li>
+              <li class="service-item">Супровід процедур закупівель</li>
+              <li class="service-item">Супровід реєстрації знаків для товарів та послуг (ТМ)</li>
+              <li class="service-item">Супровід господарських відносин</li>
+              <li class="service-item">Корпоративні конфлікти</li>
+              <li class="service-item">Зовнішньоекономічна діяльність</li>
+              <li class="service-item">Супровід підприємницької діяльності</li>
+              <li class="service-item">Авторське право</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="rounded-3xl border border-stroke bg-common/70 shadow-block grid md:grid-cols-2 overflow-hidden mb-10">
+          <div class="relative min-h-[20vh] w-full md:order-1">
+            <img
+              src="./src/img/bg/private.webp"
+              alt=""
+              class="absolute inset-0 h-full w-full object-cover z-10 grayscale-[20%]"
+            />
+          </div>
+          <div class="gap-4 p-6 xl:p-7">
+            <h3 class="text-3xl text-primary mb-1 xl:text-[33px]">Для фізичних осіб</h3>
+            <p class="font-medium text-sm font-mono leading-tight mb-10">Повний спектр юридичних послуг для фізичних осіб</p>
+            <ul class="grid ml-2 list-disc">
+              <li class="service-item">Правовий захист та представництво в кримінальних провадженнях</li>
+              <li class="service-item">Судовий захист (всі категорії справ)</li>
+              <li class="service-item">Міграційні питання</li>
+              <li class="service-item">Звернення до ЄСПЛ</li>
+              <li class="service-item">Супровід особистих майнових відносин</li>
+              <li class="service-item">Супровід особистих немайнових відносин</li>
+              <li class="service-item">Виконавче провадження</li>
+              <li class="service-item">Захист власності</li>
+            </ul>
+          </div>
+        </article>
+
+        <div class="rounded-3xl border border-stroke bg-primary/10 px-5 py-4 xl:px-6 xl:py-5">
+          <p class="text-sm xl:text-base leading-relaxed text-text-1/80">
+            Надаємо комплексний супровід на всіх етапах: від консультації та підготовки документів до представництва інтересів у
+            переговорах, судах та перед державними органами.
+          </p>
+        </div>
+      </section>
+
+      <section id="values" class="scroll-mt-24 py-10">
+        <div class="container mx-auto px-4">
+          <div class="rounded-3xl border border-stroke bg-common text-text-1 shadow-block overflow-hidden">
+            <div class="grid gap-10 px-6 py-6 xl:grid-cols-[0.9fr_1.1fr] xl:px-10 xl:py-10">
+              <div class="xl:pr-6">
+                <p class="mb-3 font-medium text-text-1/60">Наш підхід</p>
+
+                <h2 class="text-3xl xl:text-4xl font-medium font-mono mb-4 text-primary">Клієнт — у центрі нашої роботи</h2>
+
+                <p class="text-md leading-relaxed text-text-1/80 max-w-160">
+                  Для нас на першому місці — ті, чиї інтереси ми представляємо. Ми будуємо роботу так, щоб кожен клієнт відчував
+                  увагу, повагу та впевненість у професійній підтримці.
+                </p>
+              </div>
+
+              <div class="grid gap-4">
+                <article class="rounded-2xl border border-stroke bg-bg p-5">
+                  <h3 class="text-xl font-medium mb-2 text-primary">Довіра та повага</h3>
+                  <p class="leading-relaxed text-sm text-text-1/75">
+                    Ми будуємо продуктивні відносини, засновані на довірі, повазі та відкритій комунікації.
+                  </p>
+                </article>
+
+                <article class="rounded-2xl border border-stroke bg-bg p-5">
+                  <h3 class="text-xl font-medium mb-2 text-primary">Увага до ваших потреб</h3>
+                  <p class="leading-relaxed text-sm text-text-1/75">
+                    Ми уважно прислухаємося до того, що потрібно саме вам, і шукаємо рішення, яке справді відповідає вашій
+                    ситуації.
+                  </p>
+                </article>
+
+                <article class="rounded-2xl border border-stroke bg-bg p-5">
+                  <h3 class="text-xl font-medium mb-2 text-primary">Результат, що має значення</h3>
+                  <p class="leading-relaxed text-sm text-text-1/75">
+                    Для нас важливо не просто надати правову допомогу, а реально змінити ситуацію клієнта на краще.
+                  </p>
+                </article>
+              </div>
+            </div>
+
+            <div class="border-t border-stroke px-6 py-5 xl:px-10 xl:py-6">
+              <p class="text-lg xl:text-xl font-medium leading-relaxed text-text-1/90 max-w-4xl">
+                Наша найбільша винагорода — відчуття, що ми справді змінюємо життя тих, для кого працюємо.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="container mx-auto px-4 mt-4 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
+          <article class="rounded-2xl border border-stroke bg-common p-6 shadow-block">
+            <h3 class="text-xl font-medium mb-3 text-primary">Цінуємо кожного клієнта</h3>
+            <p class="leading-relaxed text-text-1/75">
+              Для нас важливий кожен, хто звертається до бюро. Ми прагнемо, щоб клієнт відчував увагу, повагу та впевненість у
+              професійній підтримці.
+            </p>
+          </article>
+
+          <article class="rounded-2xl border border-stroke bg-common p-6 shadow-block">
+            <h3 class="text-xl font-medium mb-3 text-primary">Послуги Pro Bono</h3>
+            <p class="leading-relaxed text-text-1/75">
+              Адвокатське бюро надає послуги
+              <span class="font-semibold text-primary">Pro Bono</span>
+              (безоплатно) у випадках, коли правова допомога є особливо важливою.
+            </p>
+          </article>
+
+          <article class="rounded-2xl border border-stroke bg-common p-6 shadow-block">
+            <h3 class="text-xl font-medium mb-3 text-primary">Підтримуємо громадські ініціативи</h3>
+            <p class="leading-relaxed text-text-1/75">
+              Ми підтримуємо суспільно важливі проєкти та громадські ініціативи, які сприяють розвитку правової культури та
+              захисту прав людини.
+            </p>
+          </article>
+        </div>
+      </section>
+      <section id="advokats" class="scroll-mt-24 py-10">
+        <div class="container mx-auto px-4">
+          <div class="rounded-3xl border border-stroke bg-common text-text-1 shadow-block overflow-hidden">
+            <div class="px-6 py-6 xl:px-10 xl:py-10">
+              <p class="mb-3 font-medium text-text-1/60">Команда бюро</p>
+
+              <h2 class="text-3xl xl:text-4xl font-medium font-mono mb-4 text-primary">Адвокати</h2>
+
+              <p class="max-w-3xl text-md leading-relaxed text-text-1/80 mb-8">
+                Команда адвокатського бюро поєднує досвід, відповідальність та індивідуальний підхід до кожної справи.
+              </p>
+
+              <div class="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
+                <article class="rounded-2xl border border-stroke p-5 shadow-block">
+                  <div class="overflow-hidden rounded-2xl border border-stroke bg-common mb-5 aspect-[4/5]">
+                    <img
+                      src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1000&auto=format&fit=crop"
+                      alt="Антон Прийма"
+                      class="h-full w-full object-cover"
+                    />
+                  </div>
+
+                  <h3 class="text-2xl font-medium text-primary">Антон Прийма</h3>
+
+                  <p class="mt-3 text-sm text-text-1/60">Партнер</p>
+                </article>
+
+                <article class="rounded-2xl border border-stroke p-5 shadow-block">
+                  <div class="overflow-hidden rounded-2xl border border-stroke bg-common mb-5 aspect-[4/5]">
+                    <img src="./src/img/team/levchenko.png" alt="Світлана Левченко" class="h-full w-full object-cover" />
+                  </div>
+
+                  <h3 class="text-2xl font-medium text-primary">Світлана Левченко</h3>
+
+                  <p class="mt-3 text-sm text-text-1/60">Адвокат</p>
+                </article>
+
+                <article class="rounded-2xl border border-stroke p-5 shadow-block">
+                  <div class="overflow-hidden rounded-2xl border border-stroke bg-common mb-5 aspect-[4/5]">
+                    <img
+                      src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=1000&auto=format&fit=crop"
+                      alt="Павло Сергєєв"
+                      class="h-full w-full object-cover"
+                    />
+                  </div>
+
+                  <h3 class="text-2xl font-medium text-primary">Павло Сергєєв</h3>
+
+                  <p class="mt-3 text-sm text-text-1/60">Партнер</p>
+                </article>
+              </div>
+            </div>
+
+            <div class="border-t border-stroke px-6 py-5 xl:px-10 xl:py-6">
+              <div class="grid gap-2 xl:grid-cols-[auto_auto] xl:items-center xl:justify-between">
+                <div>
+                  <a
+                    href="tel:+380683550271"
+                    class="block text-lg xl:text-xl font-medium text-primary hover:opacity-80 transition-opacity"
+                  >
+                    Тел. +38 (068) 355 02 71
+                  </a>
+                  <a href="mailto:office.levchenko@gmail.com" class="block text-text-1/80 hover:text-primary transition-colors">
+                    office.levchenko@gmail.com
+                  </a>
+                </div>
+
+                <a
+                  href="#ask"
+                  class="mt-4 xl:mt-0 inline-flex w-max items-center justify-center rounded-xl bg-primary px-6 py-3 text-common transition-colors hover:bg-secondary hover:text-text-1"
+                >
+                  Зв’язатися з нами
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="ask" class="container px-4 py-5 xl:py-10 mx-auto scroll-mt-24 my-8">
+        <h2 class="text-3xl xl:text-4xl font-medium font-mono mb-8 text-center text-primary">Контакти</h2>
+
+        <div class="grid gap-8 xl:grid-cols-[1fr_1.5fr]">
+          <div class="rounded-3xl border border-stroke bg-common/70 p-6 xl:p-10 shadow-block flex flex-col justify-center">
+            <h3 class="text-2xl font-medium mb-8 text-primary">Зв'яжіться з нами</h3>
+
+            <ul class="grid gap-6 text-lg">
+              <li class="flex items-start gap-4">
+                <svg width="24" height="24" class="fill-primary shrink-0 mt-1" viewBox="0 0 24 24">
+                  <path
+                    d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"
+                  />
+                </svg>
+                <div>
+                  <p class="text-sm text-text-1/60 mb-1">Телефон</p>
+                  <a href="tel:+380683550271" class="font-medium hover:text-primary transition-colors">+38 (068) 355-02-71</a>
+                </div>
+              </li>
+
+              <li class="flex items-start gap-4">
+                <svg width="24" height="24" class="fill-primary shrink-0 mt-1" viewBox="0 0 24 24">
+                  <path
+                    d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
+                  />
+                </svg>
+                <div>
+                  <p class="text-sm text-text-1/60 mb-1">Email</p>
+                  <a href="mailto:office.levchenko@gmail.com" class="font-medium hover:text-primary transition-colors break-all"
+                    >office.levchenko@gmail.com</a
+                  >
+                </div>
+              </li>
+
+              <li class="flex items-start gap-4">
+                <svg width="24" height="24" class="fill-primary shrink-0 mt-1" viewBox="0 0 24 24">
+                  <path
+                    d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"
+                  />
+                </svg>
+                <div>
+                  <p class="text-sm text-text-1/60 mb-1">Адреса</p>
+                  <p class="font-medium">вул. Метрологічна 9Д, Київ,<br />Україна, 03143</p>
+                </div>
+              </li>
+            </ul>
+
+            <div class="mt-8 pt-6 border-t border-stroke">
+              <p class="text-sm text-text-1/60 mb-3">Ми у соцмережах</p>
+              <a
+                href="https://www.facebook.com/people/%D0%90%D0%B4%D0%B2%D0%BE%D0%BA%D0%B0%D1%82%D1%81%D1%8C%D0%BA%D0%B5-%D0%B1%D1%8E%D1%80%D0%BE-%D0%A1%D0%B2%D1%96%D1%82%D0%BB%D0%B0%D0%BD%D0%B8-%D0%9B%D0%B5%D0%B2%D1%87%D0%B5%D0%BD%D0%BA%D0%BE/100064037233102/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-flex items-center gap-2 rounded-xl bg-[#1877F2]/10 px-5 py-2.5 text-[#1877F2] hover:bg-[#1877F2] hover:text-white transition-colors font-medium w-max"
+              >
+                <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95z"
+                  />
+                </svg>
+                Facebook
+              </a>
+            </div>
+          </div>
+
+          <div class="rounded-3xl border border-stroke overflow-hidden shadow-block min-h-[400px] bg-common relative">
+            <iframe
+              src="https://maps.google.com/maps?q=вул.%20Метрологічна%209Д,%20Київ,%20Україна,%2003143&t=&z=15&ie=UTF8&iwloc=&output=embed"
+              class="absolute inset-0 w-full h-full border-0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Адвокатське бюро Світлани Левченко на карті"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="relative z-10 border-t border-stroke bg-common/50 pt-12 pb-6 mt-16 shadow-[0_-15px_30px_-5px_rgba(0,0,0,0.1)]">
+      <div class="container mx-auto px-4">
+        <div class="flex flex-wrap justify-between gap-10 mb-10">
+          <div class="flex flex-col gap-4 xl:flex-1">
+            <a href="/" class="flex gap-3 items-center w-max focus-ring" aria-label="На головну">
+              <svg width="48" height="36" class="fill-text-1">
+                <use href="./src/svg/layout-sprite.svg#logo"></use>
+              </svg>
+              <span class="text-lg font-mono font-medium leading-tight">
+                Адвокатське бюро <br />
+                "Світлани Левченко"
+              </span>
+            </a>
+            <p class="text-sm text-text-1/70 mt-2 max-w-xs">
+              Професійний правовий захист бізнесу та приватних клієнтів. Надійність, конфіденційність та індивідуальний підхід.
+            </p>
+          </div>
+
+          <div class="min-w-[150px]">
+            <h4 class="text-lg font-medium text-primary mb-4 font-mono">Навігація</h4>
+            <ul class="grid gap-3 text-sm font-medium">
+              <li><a href="#about-us" class="hover:text-primary transition-colors text-text-1/80">Про нас</a></li>
+              <li><a href="#services" class="hover:text-primary transition-colors text-text-1/80">Послуги</a></li>
+              <li><a href="#values" class="hover:text-primary transition-colors text-text-1/80">Цінності</a></li>
+              <li><a href="#advokats" class="hover:text-primary transition-colors text-text-1/80">Адвокати</a></li>
+            </ul>
+          </div>
+
+          <div class="min-w-[200px]">
+            <h4 class="text-lg font-medium text-primary mb-4 font-mono">Контакти</h4>
+            <ul class="grid gap-3 text-sm">
+              <li class="flex items-start gap-2 text-text-1/80">
+                <span class="font-medium text-text-1">Тел:</span>
+                <a href="tel:+380683550271" class="hover:text-primary transition-colors">+38 (068) 355-02-71</a>
+              </li>
+              <li class="flex items-start gap-2 text-text-1/80">
+                <span class="font-medium text-text-1">Email:</span>
+                <a href="mailto:office.levchenko@gmail.com" class="hover:text-primary transition-colors break-all"
+                  >office.levchenko@gmail.com</a
+                >
+              </li>
+              <li class="flex items-start gap-2 text-text-1/80">
+                <span class="font-medium text-text-1">Адреса:</span>
+                <span>вул. Метрологічна 9Д, Київ</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="min-w-[150px]">
+            <h4 class="text-lg font-medium text-primary mb-4 font-mono">Ми в мережі</h4>
+            <a
+              href="https://www.facebook.com/..."
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center gap-2 text-text-1/80 hover:text-[#1877F2] transition-colors font-medium group"
+            >
+              <svg
+                width="24"
+                height="24"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+                class="group-hover:scale-110 transition-transform"
+              >
+                <path
+                  d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95z"
+                />
+              </svg>
+              Facebook
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script type="module" src="/src/js/main.js" defer></script>
+  </body>
+</html>
