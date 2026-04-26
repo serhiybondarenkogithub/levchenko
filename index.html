@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="uk">
+<html lang="uk" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta
@@ -45,21 +45,23 @@
           id="main-menu"
           :aria-hidden="!isMenuOpen"
         >
-          <ul class="divide-y container mx-auto divide-stroke xl:flex xl:divide-x xl:divide-y-0 xl:items-center -mr-2">
+          <ul
+            class="divide-y container mx-auto divide-stroke xl:flex xl:divide-x xl:divide-y-0 xl:items-center -mr-2 mt-10 ml-10 xl:mt-0 xl:ml-0"
+          >
             <li>
               <a href="#about-us" class="menu-link focus-ring w-max" @click="isMenuOpen=false">Про нас</a>
             </li>
             <li>
-              <a href="#blog" class="menu-link focus-ring w-max" @click="isMenuOpen=false">Послуги</a>
+              <a href="#services" class="menu-link focus-ring w-max" @click="isMenuOpen=false">Послуги</a>
             </li>
             <li>
               <a href="#values" class="menu-link focus-ring w-max" @click="isMenuOpen=false">Цінності</a>
             </li>
             <li>
-              <a href="#advokats" class="menu-link focus-ring w-max" @click="isMenuOpen=false">Адвокати</a>
+              <a href="#lawyers" class="menu-link focus-ring w-max" @click="isMenuOpen=false">Адвокати</a>
             </li>
             <li>
-              <a href="#ask" class="menu-link focus-ring w-max" @click="isMenuOpen=false">Задати питання</a>
+              <a href="#contacts" class="menu-link focus-ring w-max" @click="isMenuOpen=false">Контакти</a>
             </li>
           </ul>
         </nav>
@@ -115,7 +117,7 @@
             ситуаціях.
           </p>
           <a
-            href="/contacts"
+            href="#contacts"
             class="mt-auto mx-auto px-7 py-3 text-common hover:bg-secondary hover:text-text-1 shadow-2xl transition-colors bg-primary relative z-20 rounded-xl shadow-3xl shadow-common"
             >Зв'язатися з нами</a
           >
@@ -243,7 +245,7 @@
         </div>
       </section>
 
-      <section id="values" class="scroll-mt-24 py-10">
+      <section id="values" class="scroll-mt-12 py-10">
         <div class="container mx-auto px-4">
           <div class="rounded-3xl border border-stroke bg-common text-text-1 shadow-block overflow-hidden">
             <div class="grid gap-10 px-6 py-6 xl:grid-cols-[0.9fr_1.1fr] xl:px-10 xl:py-10">
@@ -318,7 +320,7 @@
           </article>
         </div>
       </section>
-      <section id="advokats" class="scroll-mt-24 py-10">
+      <section id="lawyers" class="scroll-mt-12 py-10">
         <div class="container mx-auto px-4">
           <div class="rounded-3xl border border-stroke bg-common text-text-1 shadow-block overflow-hidden">
             <div class="px-6 py-6 xl:px-10 xl:py-10">
@@ -386,7 +388,7 @@
                 </div>
 
                 <a
-                  href="#ask"
+                  href="#contacts"
                   class="mt-4 xl:mt-0 inline-flex w-max items-center justify-center rounded-xl bg-primary px-6 py-3 text-common transition-colors hover:bg-secondary hover:text-text-1"
                 >
                   Зв’язатися з нами
@@ -396,7 +398,7 @@
           </div>
         </div>
       </section>
-      <section id="ask" class="container px-4 py-5 xl:py-10 mx-auto scroll-mt-24 my-8">
+      <section id="contacts" class="scroll-mt-24 container px-4 py-5 xl:py-10 mx-auto my-8">
         <h2 class="text-3xl xl:text-4xl font-medium font-mono mb-8 text-center text-primary">Контакти</h2>
 
         <div class="grid gap-8 xl:grid-cols-[1fr_1.5fr]">
@@ -498,7 +500,7 @@
               <li><a href="#about-us" class="hover:text-primary transition-colors text-text-1/80">Про нас</a></li>
               <li><a href="#services" class="hover:text-primary transition-colors text-text-1/80">Послуги</a></li>
               <li><a href="#values" class="hover:text-primary transition-colors text-text-1/80">Цінності</a></li>
-              <li><a href="#advokats" class="hover:text-primary transition-colors text-text-1/80">Адвокати</a></li>
+              <li><a href="#lawyers" class="hover:text-primary transition-colors text-text-1/80">Адвокати</a></li>
             </ul>
           </div>
 
